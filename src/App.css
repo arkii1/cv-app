@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+body {
+    background-color:whitesmoke; 
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-75%, 0);
+ 
+    background-color: white; 
+    box-shadow: 5px 6px  4px 2px #888888;
+    overflow: hidden;
+
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right-container {
+    height: 100%;
+    width:auto;
+    color: steelblue;
+    margin-left: 2mm;
+    padding-top: 2mm;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2mm;
 }
 
-.App-link {
-  color: #61dafb;
+.name {
+    font-size: 10mm;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pronoun {
+    font-size: 5mm;
+}
+
+.summary {
+    font-size: 4mm;
+}
+
+input {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: inherit;
+    width: 90%;
+    word-wrap: break-word;
+    font-size: 4mm;
+}
+
+input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.education,
+.experience {
+
+    margin-top: 6mm;
+    display: flex;
+    flex-direction: column;
+    gap: 2mm;
+}
+
+.education > h2,
+.experience > h2 {
+    margin: 0;
+}
+
+.education-container,
+.experience-container {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.education-left-container,
+.experience-left-container {
+    width: 30%;
+}
+
+.education-container > textarea,
+.experience-container > textarea {
+    width:55%;
+    flex: 1 0 auto
+}
+
+.education-button-container,
+.experience-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto;
+}
+
+.education-button-container > button,
+.experience-button-container > button {
+    background-color: white;
+    border: solid steelblue .05mm;
+    border-radius: 1mm;
+    color: steelblue;
+}
+
+.education-button-container > button:hover,
+.experience-button-container > button:hover {
+    background-color: steelblue;
+    border: solid white .05mm;
+    color: white;
+}
+
+.education-button-container > button:active,
+.experience-button-container > button:active {
+    background-color: white;
+    border: solid steelblue .05mm;
+    color: steelblue;
+}
+
+
+.left-container {
+    padding-top: 2mm;
+
+    height: 100%;
+    width: 7cm;
+    background-color: steelblue;
+    color: white;
+}
+
+.left-container > * {
+    margin-left: 3mm;
+}
+
+.contact-details > div {
+    padding: 2mm 0;
+} 
+
+.contact-details > div > * {
+    margin: .5mm 0;
+}
+
+.contact-details > div > input {
+    font-size: 4mm;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5mm;
+}
+
+.skills > h2 {
+    margin: 0;
+}
+
+.skill-container{
+    display: flex;
+}
+
+.skill-container > div {
+    display: flex;
+    gap: 1mm;
+    margin-right: 0.5mm;
+}
+
+.skill-container > input {
+    font-size: 4mm;
+}
+
+.skill-button-container > button {
+    background-color: steelblue;
+    border: solid white .05mm;
+    border-radius: 1mm;
+    color: white;
+}
+
+.skill-button-container > button:hover {
+    background-color: white;
+    border: solid steelblue .05mm;
+    color: steelblue;
+}
+
+.skill-button-container > button:active {
+    background-color: steelblue;
+    border: solid white .05mm;
+    color: white;
+}
+
+textarea {
+    border: none;
+    resize: vertical;
+    font-size: 4mm;
+    color: steelblue;
+}
+
+textarea:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus {
+    border: solid steelblue 0.5mm;
+    border-radius: 1mm;
+    outline: none;
 }
